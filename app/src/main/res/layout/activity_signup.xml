@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignupActivity"
+    android:gravity="top|center_horizontal"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:text="Registrar usuario"
+        android:layout_marginTop="100dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Nombres"
+        android:textSize="12dp"
+        android:layout_marginTop="20dp" />
+    <EditText
+        android:id="@+id/etNames"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa nombres"
+        android:inputType="text"
+        android:minHeight="48dp" />
+    <TextView
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:text="Apellidos"
+    android:textSize="12dp"
+    android:layout_marginTop="20dp" />
+    <EditText
+        android:id="@+id/etLastNames"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa apellidos"
+        android:inputType="text"
+        android:minHeight="48dp" />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Celular"
+        android:textSize="12dp"
+        android:layout_marginTop="20dp" />
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa celular"
+        android:inputType="phone"
+        android:minHeight="48dp" />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Correo"
+        android:textSize="12dp"
+        android:layout_marginTop="20dp" />
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa correo"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp" />
+    <TextView
+        android:id="@+id/emailErrorText"
+        android:layout_width="300dp"
+        android:textColor="#FF0000"
+        android:visibility="invisible"
+        android:layout_height="wrap_content"
+        android:text="Ingresa un correo válido"
+        android:textSize="10dp" />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Contraseña"
+        android:textSize="12dp"
+        android:layout_marginTop="20dp" />
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa contraseña"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:paddingVertical="15dp"
+        android:backgroundTint="@color/secondary"
+        android:layout_marginTop="20dp"
+        android:text="Registrar"
+        />
+
+</LinearLayout>

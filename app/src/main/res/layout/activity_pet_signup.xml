@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PetSignupActivity"
+    android:gravity="top|center_horizontal"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingBottom="50dp"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:text="Registra tu mascota"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/avatar_placeholder"
+            android:elevation="5dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre"
+                android:textSize="12dp"
+                android:layout_marginTop="20dp" />
+            <EditText
+                android:id="@+id/etPetName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingresa nombres"
+                android:inputType="text"
+                android:minHeight="48dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Edad"
+        android:textSize="12dp"
+        android:layout_marginTop="20dp" />
+    <EditText
+        android:id="@+id/etPetAge"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa edad"
+        android:inputType="text"
+        android:minHeight="48dp" />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Raza"
+        android:textSize="12dp"
+        android:layout_marginTop="20dp" />
+    <EditText
+        android:id="@+id/etPetBreed"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa raza"
+        android:inputType="text"
+        android:minHeight="48dp" />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Sexo"
+        android:textSize="12dp"
+        android:layout_marginTop="20dp" />
+    <Spinner
+        android:id="@+id/spinnerPetSex"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:spinnerMode="dropdown" />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Especie"
+        android:textSize="12dp"
+        android:layout_marginTop="20dp" />
+    <EditText
+        android:id="@+id/etPetSpecie"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Especie"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:paddingVertical="15dp"
+        android:backgroundTint="@color/secondary"
+        android:layout_marginTop="20dp"
+        android:text="Registrar"
+        />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

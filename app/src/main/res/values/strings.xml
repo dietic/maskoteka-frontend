@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MaskotekaFinal</string>
+    <string-array name="veterinarians_array">
+        <item>Dr. Juan Pérez</item>
+        <item>Dra. María Gómez</item>
+        <item>Dr. Carlos Ruiz</item>
+        <item>Dra. Ana Martínez</item>
+    </string-array>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/itemPetSignup" android:title="Registrar mascota" app:showAsAction="never" android:icon="@drawable/outline_add_24"></item>
+    <item android:id="@+id/itemScheduleAppointment" android:title="Agendar cita" app:showAsAction="never" android:icon="@drawable/outline_ad_24"></item>
+    <item android:id="@+id/itemMyAppointments" android:title="Mis citas" app:showAsAction="never" android:icon="@drawable/baseline_schedule_24"></item>
+</menu>
